@@ -1,0 +1,123 @@
+/*General Default Desktop*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    overflow: hidden;
+  }
+  .showcase{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    display:flex;
+    justify-content:space-between;
+    color: black;
+    background: black;
+    z-index: 2;
+  }
+  .showcase.active {
+   right:300px;
+  }
+  .showcase header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #63666A;
+  }
+  .toggle{
+   position: relative;
+    width: 60px;
+    height: 60px;
+    background: url('../images/down.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+  }
+  .toggle.active{
+    background: url('../images/cancel.png');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+  }
+  .menu {
+    position: absolute;
+    top:0;
+    right:0;
+    width: 300px;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    background-color: #222222;
+  }  
+  .menu ul{
+  position: relative;
+  list-style: none;
+  }
+  .menu ul li a{
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  }
+  .menu ul li a:hover {
+  text-decoration: none;
+  font-size: 24px;
+  color: red;
+  }
+.video{
+    position:relative;
+    top:90px;
+    left:1000;
+    width:90%; 
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover; 
+    overflow: hidden;  
+
+}
+.line1{
+    position: relative;
+    vertical-align:middle;
+    text-align: center;
+    margin: auto;
+    color: white;
+  }
+  /*Tablet styles*/
+  @media (max-width: 1023px){
+    .video{
+      position:relative;
+      top:90px;
+      left:1000;
+      width:85%; 
+      height: 75%;
+      margin-left: auto;
+      margin-right: auto;
+      object-fit: cover; 
+      overflow: hidden;  
+  }
+}
+/*phone styles*/
+@media (max-width: 800px){
+  .video{
+    position:relative;
+    top:90px;
+    left:1000;
+    width:65%; 
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover; 
+    overflow: hidden;  
+}
+}

@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+  }
+  .showcase{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display:flex ;
+    justify-content:space-between;
+    align-items: center;
+    color: black;
+    z-index: 2;
+    background: #63666A;
+  }
+  .showcase.active {
+   right:300px;
+  }
+  .showcase header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .toggle{
+   position: relative;
+    width: 60px;
+    height: 60px;
+    background: url('../images/down.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+  }
+  .toggle.active{
+    background: url('../images/cancel.png');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+  }
+  .menu {
+    position: absolute;
+    top:0;
+    right:0;
+    width: 300px;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    background-color: #222222;
+  }  
+.menu ul{
+  position: relative;
+  list-style: none;
+}
+.menu ul li a{
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+}
+.menu ul li a:hover {
+  text-decoration: none;
+  font-size: 24px;
+  color: red;
+}
+table{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+}
+table tr th{
+    position: relative;
+    border:1px solid;
+    text-align: center;
+    padding: 10px;
+   
+}
+  table tr td{
+    position: relative;
+    border:1px solid;
+    text-align: center;
+    padding: 10px;
+    
+}
+.imggun{
+    max-width: 100%;
+    height: auto;
+    padding: 50px;
+}
+footer{
+  position: absolute;
+  top: 4600px;
+  bottom:0px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+  z-index: 1;
+  line-height: 80px;
+}
